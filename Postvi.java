@@ -8,7 +8,6 @@ class Postvi
 	{
 		int n;
 		Scanner sc=new Scanner(System.in);
-		System.out.println("enter n");
 		n=sc.nextInt();
 		 if(n>0)
 		{
