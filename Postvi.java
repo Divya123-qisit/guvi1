@@ -10,19 +10,17 @@ class Postvi
 		Scanner sc=new Scanner(System.in);
 		System.out.println("enter n");
 		n=sc.nextInt();
-		if(n==0)
+		 if(n>0)
 		{
-			System.out.println("postive or negative");
-		}
-		else if(n>0)
-		{
-			System.out.println("postive");
+			System.out.println("Postive");
 		}
 		else if(n<0)
 		{
-			System.out.println("negative");
+			System.out.println("Negative");
 		}
+		else
+			System.out.println("Zero");
 		
-		
-		}
+
 	}
+}
