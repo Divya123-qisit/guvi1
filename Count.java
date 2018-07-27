@@ -8,10 +8,12 @@ class Count
 		int n,count=0,i=0;
 		Scanner sc=new Scanner(System.in);
 		n=sc.nextInt();
-		while(i<n)
+		while(n!=0)
 		{
-			count=count+i;
-			i=i+1;
+			n=n/10;
+			count++;
+
+	
 		}
 		System.out.println(count);
 	}
