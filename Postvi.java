@@ -11,7 +11,7 @@ class Postvi
 		n=sc.nextInt();
 		 if(n>0)
 		{
-			System.out.println("Postive");
+			System.out.println("Positive");
 		}
 		else if(n<0)
 		{
