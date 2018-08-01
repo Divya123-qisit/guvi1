@@ -15,7 +15,7 @@ class Str
         }
 
         if(numeric)
-            System.out.println("Yes");
+            System.out.println("yes");
         else
             System.out.println("No");
     }
