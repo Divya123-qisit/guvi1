@@ -11,9 +11,9 @@ class CountSp
 		for(int i=0;i<str.length();i++)
 		{
 			if(!(Character.isAlphabetic(str.charAt(i))) && !(Character.isDigit(str.charAt(i))))
-			{
+			
 				ch++;
-			}
+			
 		}
 		System.out.println(ch);
 	}
