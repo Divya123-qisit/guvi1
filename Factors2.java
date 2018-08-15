@@ -11,8 +11,10 @@ class Factors2
 		{
 			if(n%i==0)
 			{
+				if(i!=n)
+				System.out.print(i+" ");
+				else
 				System.out.print(i);
-				System.out.print(" ");
 			}
 		}
 	}
