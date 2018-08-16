@@ -5,18 +5,19 @@ class Lcm
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		int lcm=0;
+
 		Scanner sc=new Scanner(System.in);
 		int n1=sc.nextInt();
 		int n2=sc.nextInt();
-		for(int i=n1;i<n1*n2;i++)
+		int lcm=(n1>n2) ? n1 : n2;
+		while(true)
 		{
-			if(i%n1==0 && i%n2==0)
+			if(lcm % n1 == 0 && lcm % n2 == 0)
 			{
-				lcm=i;
+				System.out.println(lcm);
 				break;
 			}
+			++lcm;
 		}
-		System.out.println(lcm);
 	}
 }
