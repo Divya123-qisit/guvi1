@@ -7,8 +7,8 @@ class StringEvenOdd
 	{
 		Scanner sc=new Scanner(System.in);
 		String s=sc.nextLine();
-		String even=" ";
-		String odd=" ";
+		String even="";
+		String odd="";
 		for(int i=0;i<s.length();i++)
 		{
 			if(i%2==0)
