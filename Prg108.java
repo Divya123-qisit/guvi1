@@ -9,7 +9,6 @@ class Prg108
 		// your code goes here
 		Scanner sc=new Scanner(System.in);
 		int n=sc.nextInt();
-		int m=sc.nextInt();
 		int k=sc.nextInt();
 		int a[]=new int[n];
 		for(int i=1;i<n;i++)
