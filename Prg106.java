@@ -13,5 +13,7 @@ class Prg106
 		a[i]=sc.nextInt();
 		if(a[k]%2!=0)
 		System.out.println(a[k]);
+		else
+		System.out.println(a[k]+1);
 	}
 }
