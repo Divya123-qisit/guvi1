@@ -12,7 +12,6 @@ class Prg91
 		int h=sc.nextInt();
 		int s=2*((l*b)+(b*h)+(h*l));
 		int v=l*b*h;
-		System.out.print(s +" ");
-		System.out.print(v);
+		System.out.print(s+" "+v);
 	}
 }
