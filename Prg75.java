@@ -5,20 +5,21 @@ class Prg75
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		// your code goes here
-		int a;
 		Scanner sc=new Scanner(System.in);
-		String str=sc.nextLine();
-		a=str.length()/2;
-		char[] array=str.toCharArray();
-		if(str.length()%2==0)
+		String s=sc.nextInt();
+		StringBuilder str=new StringBuilder(s);
+		int len=str.length();
+		int r=len/2;
+		if(len%2==0)
 		{
-			array[a-1]='*';
-			array[a]='*';
-			System.out.println(array);
+			str.setCharAt(r,'*');
+			--r;
+			str.setCharAt(r,'*');
 		}
 		else
-		array[a]='*';
-		System.out.println(array);
+		{
+			str.setCharAt(r,'*');
+		}
+		System.out.println(str);
 	}
 }
