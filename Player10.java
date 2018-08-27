@@ -7,29 +7,20 @@ class Player10
 	{
 		// your code goes here
 		Scanner sc=new Scanner(System.in);
-		String s1=sc.next();
-		String s2=sc.next();
-		int l1=s1.length();
-		int l2=s2.length();
-		int d=0,i;
-		for(i=0;i<l1;i++)
+		String str=sc.next();
+		String str1=sc.next();
+		int len=str.length();
+		int count=0;
+		for(int i=0;i<str.length();i++)
 		{
-			if(s1.charAt(i)==s2.charAt(i))
+			if(str.charAt(i)==str1.charAt(i))
 			{
-				d=d+i;
+			count++;
 			}
-			
 		}
-		if(d!=0)
-		{
-			System.out.print("yes");
-		}
+		if(count==len)
+		System.out.println("yes");
 		else
-		{
-			System.out.print("no");
-		}
-		
-		
-	
+		System.out.println("no");
 	}
 }
