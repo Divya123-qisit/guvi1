@@ -19,8 +19,8 @@ class Player10
 			}
 		}
 		if(count==len)
-		System.out.println("yes");
-		else
 		System.out.println("no");
+		else
+		System.out.println("yes");
 	}
 }
