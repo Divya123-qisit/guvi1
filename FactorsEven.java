@@ -13,8 +13,15 @@ class FactorsEven
 		if(k%i==0)
 		{
 		if(i%2==0)
-		System.out.print(i+" ");
+		{
+			if(i!=k)
+				System.out.print(i+" ");
+			else
+				System.out.println(i);
 		}
 		}
+		}
+			
+	
 	}
 }
