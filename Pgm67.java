@@ -1,7 +1,7 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
-class FACT
+class Pgm67
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
