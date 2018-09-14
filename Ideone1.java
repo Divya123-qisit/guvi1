@@ -9,14 +9,21 @@ class Ideone1
 		Scanner sc=new Scanner(System.in);
 		int n=sc.nextInt();
 		int a[]=new int[n];
+		int temp=0;
 		for(int i=0;i<n;i++)
 		a[i]=sc.nextInt();
-		for(int j=0;j<n;j++)
+		for(int i=0;i<n;i++)
 		{
-			if(a[j]<n)
+			if(i!=n-1)
 			{
-				System.out.print(a[j]+" ");
+			if(a[i]<n)
+			System.out.print(a[i]+" ");
 			}
-		}
+				else
+				{
+					if(a[i]<n)
+						System.out.println(a[i]);
+		}		}
+			
 	}
 }
