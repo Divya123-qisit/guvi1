@@ -6,19 +6,27 @@ class Ideone2
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		// your code goes here
-		int count=0;
-		Scanner sc=new Scanner(System.in);
+			Scanner sc=new Scanner(System.in);
 		int n=sc.nextInt();
 		int k=sc.nextInt();
 		int a[]=new int[n];
+		int count=1;
 		for(int i=0;i<n;i++)
 		a[i]=sc.nextInt();
 		for(int i=0;i<n;i++)
 		{
-			if(a[i]==k)
-			count++;
+			for(int j=i+1;j<n;j++)
+			{
+				if(a[i]==a[j])
+					count++;
+			}
+			if(count>1)
+				if(count==k){
+					System.out.print(a[i]);
+			break;
+				}
 		}
-		System.out.println(count);
+				
 		
 	}
 }
