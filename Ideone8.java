@@ -13,7 +13,7 @@ class Ideone8
 		a[i]=sc.nextInt();
 		for(int i=0;i<n-1;i++)
 		{
-			if(i!=n-1)
+			if(i!=n-2)
 			{
 				if(a[i]>a[i+1])
 				System.out.print(a[i]+" ");
