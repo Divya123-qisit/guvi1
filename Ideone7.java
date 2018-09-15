@@ -5,26 +5,37 @@ class Ideone7
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		// your code goes here
-	
-		
-		Scanner s=new Scanner(System.in);
-		int n=s.nextInt();
-		int[] a=new int[n];
+		int temp=0,min=0,m;
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int a[]=new int[n];
+		for(int i=0;i<n;i++)
+		a[i]=sc.nextInt();
 		for(int i=0;i<n;i++)
 		{
-			a[i]=s.nextInt();
-		}
-		int max=a[1]-a[0];
-		int i,j;
-		for(i=0;i<n;i++)
-		{
-			for(j=i+1;j<n;j++)
+			for(int j=i+1;j<n;j++)
 			{
-				if(a[j]-a[i]<max)
-				max=a[j]-a[i];
+				if(a[i]<a[j])
+				{
+					temp=a[i];
+					a[i]=a[j];
+					a[j]=temp;
+				}
 			}
+			min=a[0];
 		}
-		System.out.print(max);
+			for(int i=0;i<n;i++)
+			{
+				for(int j=i+1;j<n;j++)
+				{
+					m=a[i]-a[j];
+					if(m>0)
+					if(m<min)
+					{
+						min=m;
+					}
+				}
+			}
+			System.out.println(min);
 	}
 }
