@@ -16,6 +16,8 @@ class Ideone9
 		{
 			if(a[i]>max)
 			max=a[i];
+			else
+				max=max;
 		}
 		System.out.println(max);
 	}
