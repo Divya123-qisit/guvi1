@@ -11,8 +11,14 @@ class Ideone88
 	{
 		// your code goes here
 		Scanner sc=new Scanner(System.in);
-		String n=sc.next();
-		System.out.println(Integer.parseInt(n,2));
-		
+		long n=sc.nextLong();
+		int decimal=0,p=0;
+		while(n!=0)
+		{
+			decimal+=((n%10)*Math.pow(2,p));
+			n=n/10;
+			p++;
+		}
+		System.out.print(decimal);
 	}
 }
