@@ -11,34 +11,27 @@ class SumPre
 	{
 		// your code goes here
 		Scanner sc=new Scanner(System.in);
-		int sum=0;
-int n=sc.nextInt();
-int a[]=new int[n];
-for(int i=0;i<n;i++)
-{
-a[i]=sc.nextInt();
-}
-for(int i=0;i<n;i++)
-{
-	sum=sum+a[i];
-	System.out.print(sum+" ");
-}
-
-	}
-}Scanner sc=new Scanner(System.in);
-int sum=0;
-int n=sc.nextInt();
-int a[]=new int[n];
-for(int i=0;i<n;i++)
-{
-a[i]=sc.nextInt();
-}
-for(int i=0;i<n;i++)
-{
-	sum=sum+a[i];
-	System.out.print(sum+" ");
-}
-
+		int sum=0,k=0;
+		Scanner sc=new Scanner(System.in);
+		int n=sc.nextInt();
+		int a[]=new int[n];
+		int b[]=new int[n];
+		for(int i=0;i<n;i++)
+		{
+			a[i]=sc.nextInt();
+		}
+		for(int i=0;i<n;i++)
+		{
+			sum=sum+a[i];
+			b[k]=sum;
+			k++;
+		}
+		for(int i=0;i<n;i++)
+		{
+			if(n!=n-1)
+			System.out.print(b[i]);
+			else
+			System.out.print(b[i]+" ");
+		}
 	}
 }
-
